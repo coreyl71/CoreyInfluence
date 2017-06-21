@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#C5B587</color>
+
+    <color name="color_red">#cc0000</color>
+
+    <color name="main_yellow">#f5e755</color>
+    <color name="dark_yellow">#ffd700</color>
+    <color name="translucence_yellow">#aafce34b</color>
+    <color name="main_white">#FFFFFF</color>
+    <color name="main_gray">#CDCECF</color>
+    <color name="main_black">#000000</color>
+    <color name="main_blue">#5ea0ee</color>
+    <color name="main_pink">#f95e82</color>
+    <color name="main_gray2">#f9f9f9</color>
+    <color name="text_main_gray">#b2b2b2</color>
+
+    <!--tab字体的颜色-->
+    <color name="tab_on">#c5b587</color>
+    <color name="tab_off">#4a4a4a</color>
+
+    <!--圆形进度条的颜色-->
+    <color name="RingGreen">#50d2c2</color>
+    <color name="RingYellow">#fcab53</color>
+    <color name="RingPurple">#ba77ff</color>
+    <!--圆环进度条背景色-->
+    <color name="translucence_white">#55ffffff</color>
+    <color name="translucence_black">#a0000000</color>
+
+    <!--个人信息  标签-->
+    <color name="biaoqian_green">#50d2c2</color>
+    <color name="biaoqian_purple">#977ff9</color>
+    <color name="biaoqian_light_green">#aade71</color>
+
+    <!--WheelView颜色-->
+    <color name="white">#ffffff</color>
+    <color name="white_half">#77ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="topbar_3">#339EFE</color>
+    <color name="line">#dddddd</color>
+    <color name="text_10">#333333</color>
+    <color name="text_11">#999999</color>
+    <color name="gray_bg">#f4f4f4</color>
+    <color name="bg_gray_home">#e5e7eb</color>
+
+    <color name="light_gray">#99a4b7</color>
+    <color name="text_gray">#9b9b9b</color>
+    <color name="text_black">#4a4a4a</color>
+    <color name="text_yellow">#c5b587</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+
+</resources>

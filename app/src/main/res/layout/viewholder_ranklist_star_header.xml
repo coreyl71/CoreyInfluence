@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/y2"
+    android:background="#e5e7eb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y37"
+        android:background="@color/white">
+
+        <!--小图标-->
+        <View
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/x12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y15"
+            android:background="@drawable/ic_home_newslist" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y15"
+            android:text="最新排行"
+            android:textColor="@color/text_yellow"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tv_rule_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y45"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:autoLink="all"
+            android:gravity="center"
+            android:paddingRight="@dimen/x20"
+            android:text="规则说明"
+            android:textColor="#b2b2b2"
+            android:textSize="@dimen/text_12" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y230"
+        android:background="@color/white">
+        <!--第一名的LL-->
+        <LinearLayout
+            android:id="@+id/ll_ranklist_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <!--圆形头像和表示名次的图标布局-->
+            <FrameLayout
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/x100">
+
+                <com.dlab.coreyinfluence.utils.CircleImageView
+                    android:id="@+id/civ_rank_headimg_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="@dimen/x10"
+                    android:src="@drawable/ic_vector_gold_medal"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_rank_name_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y6"
+                android:text="王力宏"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x10"
+                    android:layout_height="@dimen/x13"
+                    android:src="@drawable/ic_vector_fire" />
+
+                <TextView
+                    android:id="@+id/tv_rank_count_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="218872"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--第二名的LL-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ll_ranklist_first"
+            android:layout_marginLeft="@dimen/x38"
+            android:orientation="vertical">
+
+            <com.dlab.coreyinfluence.utils.CircleImageView
+                android:id="@+id/civ_rank_headimg_second"
+                android:layout_width="@dimen/x85"
+                android:layout_height="@dimen/x85"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_rank_name_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y6"
+                android:text="Corey"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x10"
+                    android:layout_height="@dimen/x13"
+                    android:src="@drawable/ic_vector_fire" />
+
+                <TextView
+                    android:id="@+id/tv_rank_count_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="218872"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--第三名的LL-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_ranklist_first"
+            android:layout_marginRight="@dimen/x38"
+            android:orientation="vertical">
+
+            <com.dlab.coreyinfluence.utils.CircleImageView
+                android:id="@+id/civ_rank_headimg_third"
+                android:layout_width="@dimen/x85"
+                android:layout_height="@dimen/x85"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_rank_name_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y6"
+                android:text="王力宏"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x10"
+                    android:layout_height="@dimen/x13"
+                    android:src="@drawable/ic_vector_fire" />
+
+                <TextView
+                    android:id="@+id/tv_rank_count_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:text="218872"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

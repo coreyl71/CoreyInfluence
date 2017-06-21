@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="@dimen/y5"
+    android:paddingBottom="@dimen/y5"
+    android:layout_marginBottom="1dp">
+
+    <!--最新资讯图片控件-->
+    <ImageView
+        android:id="@+id/iv_home_item"
+        android:layout_width="@dimen/x97"
+        android:layout_height="@dimen/x64"
+        android:layout_marginLeft="@dimen/x12"
+        android:scaleType="centerCrop"
+        android:src="@color/bg_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x24">
+
+        <!--新闻标题-->
+        <TextView
+            android:id="@+id/tv_home_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="影响力盛典群星荟萃，8月24日不见不散;影响力盛典群星荟萃，8月24日不见不散"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_black"
+            android:textStyle="bold"/>
+
+        <!--新闻日期和时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <!--新闻日期-->
+            <TextView
+                android:id="@+id/tv_home_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-05-19"
+                android:textSize="@dimen/text_10"
+                android:textColor="@color/text_black"/>
+            <!--新闻时间-->
+            <TextView
+                android:id="@+id/tv_home_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:text="11:33"
+                android:textSize="@dimen/text_10"
+                android:textColor="@color/text_black"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--测试-->
+    <!--<TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tv_item"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/bg_gray_home"
+    android:paddingTop="@dimen/y10"
+    android:paddingBottom="@dimen/y10">
+
+    <TextView
+        android:id="@+id/tv_footview_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:text="正在加载..."
+        android:textSize="@dimen/text_12"/>
+
+</LinearLayout>

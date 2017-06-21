@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--投票列表Dialog的动画-->
+    <style name="VoteListDialog" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_top</item>
+    </style>
+
+</resources>

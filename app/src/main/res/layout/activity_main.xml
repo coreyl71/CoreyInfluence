@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlab.coreyinfluence.activity.MainActivity">
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d0d0d0" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!-- 这个布局决定了标签在上面还是在下面显示 -->
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+        </android.support.v4.app.FragmentTabHost>
+
+        <!--测试布局：测试沉浸式布局对局部布局的影响-->
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_red">
+            <ImageView
+                android:id="@+id/iv_test"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:background="@color/main_black"
+                android:src="@mipmap/ic_launcher"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

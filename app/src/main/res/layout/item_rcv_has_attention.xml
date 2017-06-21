@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/x48"
+    android:layout_height="@dimen/x48"
+    android:layout_marginTop="@dimen/x13"
+    android:layout_marginBottom="@dimen/x10"
+    android:layout_marginLeft="@dimen/x20"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <com.dlab.coreyinfluence.utils.CircleImageView
+        android:id="@+id/civ_has_attention_item"
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/x48"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <ImageView
+        android:id="@+id/iv_delete_attention_item"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:paddingLeft="@dimen/x3"
+        android:paddingBottom="@dimen/x3"
+        android:src="@drawable/vector_ic_delete_attention"
+        android:layout_gravity="right|top"/>
+
+</FrameLayout>

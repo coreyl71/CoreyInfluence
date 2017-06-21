@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x72">
+
+    <!--头像-->
+    <com.dlab.coreyinfluence.utils.CircleImageView
+        android:id="@+id/civ_favorite_item_headimg"
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/x48"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_rank_no"
+        android:layout_marginLeft="@dimen/x12"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/civ_favorite_item_headimg"
+        android:layout_marginLeft="@dimen/x13"
+        android:orientation="vertical">
+
+        <!--姓名-->
+        <TextView
+            android:id="@+id/tv_favorite_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鹿晗"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/main_black"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y8"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x10"
+                android:src="@drawable/ic_vector_fire"/>
+
+            <!--票数-->
+            <TextView
+                android:id="@+id/tv_favorite_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x5"
+                android:text="102241"
+                android:textSize="@dimen/text_12"
+                android:textColor="#4a4a4a"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--拉票按钮-->
+    <TextView
+        android:id="@+id/tv_favorite_item_vote"
+        android:layout_width="@dimen/x59"
+        android:layout_height="@dimen/x22"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x33"
+        android:background="@drawable/bg_vote_my_favorite"
+        android:padding="@dimen/x4"
+        android:gravity="center"
+        android:text="拉票"
+        android:textSize="@dimen/text_14"
+        android:textColor="#c5b587"/>
+
+</RelativeLayout>

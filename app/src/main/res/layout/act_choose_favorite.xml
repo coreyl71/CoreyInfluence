@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.dlab.coreyinfluence.activity.ChooseFavoriteA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y63"
+        android:background="@color/text_yellow">
+
+        <ImageView
+            android:id="@+id/iv_back_choose_favorite"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/x24"
+            android:padding="@dimen/x5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y13"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:src="@drawable/vector_ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y15"
+            android:text="我的关注"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_done_choose_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y15"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x15"
+            android:text="完成"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y56"
+        android:background="@color/text_yellow">
+
+        <!--android:inputType="text"必须加，不然imeOptions无效-->
+        <EditText
+            android:id="@+id/et_search_star"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x6"
+            android:layout_marginRight="@dimen/x6"
+            android:paddingLeft="@dimen/x9"
+            android:background="@drawable/bg_searchview_favorite"
+            android:hint="搜索你喜爱的明星"
+            android:drawableLeft="@drawable/vector_ic_favorite_search"
+            android:drawablePadding="@dimen/x7"
+            android:textSize="@dimen/text_14"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--左边选项卡，右边列表-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/x90"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_choose_fav_hot"
+                    android:layout_width="@dimen/x74"
+                    android:layout_height="@dimen/x32"
+                    android:layout_marginTop="@dimen/y23"
+                    android:background="@drawable/bg_choose_cate_selected"
+                    android:gravity="center"
+                    android:text="热门"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="#c5b587"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_fav_star"
+                    android:layout_width="@dimen/x74"
+                    android:layout_height="@dimen/x32"
+                    android:layout_marginTop="@dimen/y23"
+                    android:background="@drawable/bg_choose_cate_normal"
+                    android:gravity="center"
+                    android:text="明星"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="@color/text_black"/>
+
+                <TextView
+                    android:id="@+id/tv_choose_fav_ostar"
+                    android:layout_width="@dimen/x74"
+                    android:layout_height="@dimen/x32"
+                    android:layout_marginTop="@dimen/y23"
+                    android:background="@drawable/bg_choose_cate_normal"
+                    android:gravity="center"
+                    android:text="网红"
+                    android:textSize="@dimen/text_18"
+                    android:textColor="@color/text_black"/>
+
+            </LinearLayout>
+
+            <!--右侧选择关注的网红列表-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_choose_fav_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_choose_fav_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_choose_fav_ostar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <!--底部已关注横向滚动条-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_has_attention_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:scrollbars="none"/>
+
+    </FrameLayout>
+
+</LinearLayout>

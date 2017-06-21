@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/y8">
+
+    <FrameLayout
+        android:layout_width="@dimen/x57"
+        android:layout_height="@dimen/x57">
+        <!--明星头像-->
+        <com.dlab.coreyinfluence.utils.CircleImageView
+            android:id="@+id/civ_item_vote_list"
+            android:layout_width="@dimen/x57"
+            android:layout_height="@dimen/x57"
+            android:src="@mipmap/ic_launcher" />
+        <!--该明星是否被选中-->
+        <ImageView
+            android:id="@+id/iv_item_chosen_vote_list"
+            android:layout_width="@dimen/x17"
+            android:layout_height="@dimen/x17"
+            android:layout_gravity="bottom|right"
+            android:visibility="gone"
+            android:src="@mipmap/ic_launcher"/>
+    </FrameLayout>
+
+    <!--明星姓名-->
+    <TextView
+        android:id="@+id/tv_item_vote_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y7"
+        android:text="Corey"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_14" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_rank_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:text="04"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/main_black"
+        android:textStyle="bold"/>
+
+    <com.dlab.coreyinfluence.utils.CircleImageView
+        android:id="@+id/civ_rank_headimg"
+        android:layout_width="@dimen/x48"
+        android:layout_height="@dimen/x48"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_rank_no"
+        android:layout_marginLeft="@dimen/x12"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/tv_rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/civ_rank_headimg"
+        android:layout_marginLeft="@dimen/x13"
+        android:text="鹿晗"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/main_black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_rank_count"
+        android:layout_width="@dimen/x10"
+        android:layout_height="@dimen/x10"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_vector_fire"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/x245"/>
+
+    <TextView
+        android:id="@+id/tv_rank_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_rank_count"
+        android:layout_marginLeft="@dimen/x7"
+        android:text="102241"
+        android:textSize="@dimen/text_12"
+        android:textColor="#4a4a4a"/>
+
+</RelativeLayout>
