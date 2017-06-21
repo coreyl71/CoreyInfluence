@@ -44,15 +44,15 @@ public class ChooseFavRightRCVAdapter extends RecyclerView.Adapter<RecyclerView.
     }
 
     // 定义接口，布尔值是判断选中还是取消选中
-    public interface OnChooseFavItemClickListener {
+    public interface OnChooseFavRightItemClickListener {
         void onItemClick(View view, int position, int isItemChosen);
     }
 
     // 声明接口变量
-    private OnChooseFavItemClickListener mOnItemClickListener = null;
+    private OnChooseFavRightItemClickListener mOnItemClickListener = null;
 
     // set方法，引用到这个adapter的时候通过这个方法来调用item的点击事件
-    public void setOnChooseFavItemClickListener(OnChooseFavItemClickListener listener) {
+    public void setOnChooseFavRightItemClickListener(OnChooseFavRightItemClickListener listener) {
         this.mOnItemClickListener = listener;
     }
 

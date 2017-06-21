@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_home"
+    android:orientation="vertical"
+    tools:context="com.dlab.coreyinfluence.activity.MySettingA">
+
+    <!--顶端标题栏RL-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:background="@color/text_yellow">
+
+        <ImageView
+            android:id="@+id/iv_back_my_setting"
+            android:layout_width="@dimen/x24"
+            android:layout_height="@dimen/x24"
+            android:padding="@dimen/x5"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y9"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x15"
+            android:src="@drawable/vector_ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y10"
+            android:text="设置"
+            android:textSize="@dimen/text_18"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <!--昵称RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_nickname"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_my_favorite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_nickname"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="昵称"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_nickname"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_nickname"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="@color/bg_gray_home"/>
+
+    <!--绑定手机RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_bind_phone"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_my_favorite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_bind_phone"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="绑定手机"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_bind_phone"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未绑定"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_bind_phone"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/bg_gray_home"/>
+
+    <!--绑定微信RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_bind_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_bind_wechat"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_my_favorite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_bind_wechat"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="绑定微信"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_bind_wechat"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未绑定"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_bind_wechat"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/bg_gray_home"/>
+
+    <!--绑定微博RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_bind_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_bind_weibo"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_my_favorite"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_bind_weibo"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="绑定微博"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_bind_weibo"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未绑定"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_bind_weibo"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/bg_gray_home"/>
+
+</LinearLayout>

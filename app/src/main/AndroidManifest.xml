@@ -28,8 +28,10 @@
         <activity
             android:name=".activity.MyFavoriteA"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.ChooseFavoriteA"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ChooseFavoriteA"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MySettingA"></activity>
     </application>
 
 </manifest>

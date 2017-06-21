@@ -121,7 +121,7 @@ public class ChooseFavoriteA extends AppCompatActivity {
         rcv_has_attention_list.setAdapter(mBottomRCVAdapter);
 
         // TODO: 2017/6/21  设置底部列表的item点击事件
-        
+
 
 
 
@@ -131,7 +131,7 @@ public class ChooseFavoriteA extends AppCompatActivity {
         rcv_choose_fav_hot.setAdapter(mRightRCVAdapter);
 
         // 设置右侧列表的item点击事件
-        mRightRCVAdapter.setOnChooseFavItemClickListener(new ChooseFavRightRCVAdapter.OnChooseFavItemClickListener() {
+        mRightRCVAdapter.setOnChooseFavRightItemClickListener(new ChooseFavRightRCVAdapter.OnChooseFavRightItemClickListener() {
             @Override
             public void onItemClick(View view, int position, int isItemChosen) {
                 if (position != -1) {

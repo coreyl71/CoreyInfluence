@@ -23,6 +23,7 @@
 
     </RelativeLayout>
 
+    <!--个人信息栏-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/y87"
@@ -98,7 +99,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/y87"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="@dimen/y10"
         android:background="@color/white">
@@ -107,8 +108,7 @@
         <RelativeLayout
             android:id="@+id/rl_my_property"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="@dimen/y44">
 
             <ImageView
                 android:id="@+id/iv_my_property"
@@ -139,6 +139,44 @@
 
         <View
             android:layout_width="match_parent"
+            android:layout_height="@dimen/y10"
+            android:background="@color/bg_gray_home"/>
+
+        <!--我的交易RL-->
+        <RelativeLayout
+            android:id="@+id/rl_my_deal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y44">
+
+            <ImageView
+                android:id="@+id/iv_my_deal"
+                android:layout_width="@dimen/x22"
+                android:layout_height="@dimen/x22"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/vector_ic_my_favorite"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_my_deal"
+                android:layout_marginLeft="@dimen/x16"
+                android:text="我的交易"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/text_black"/>
+
+            <ImageView
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x17"
+                android:src="@drawable/vector_ic_last_step"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
             android:layout_height="@dimen/y2"
             android:background="@color/bg_gray_home"/>
 
@@ -146,8 +184,7 @@
         <RelativeLayout
             android:id="@+id/rl_my_favorite"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="@dimen/y44">
 
             <ImageView
                 android:id="@+id/iv_my_favorite"
@@ -164,6 +201,82 @@
                 android:layout_toRightOf="@+id/iv_my_favorite"
                 android:layout_marginLeft="@dimen/x16"
                 android:text="我的关注"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/text_black"/>
+
+            <ImageView
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x17"
+                android:src="@drawable/vector_ic_last_step"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/bg_gray_home"/>
+
+        <!--我的兑换RL-->
+        <RelativeLayout
+            android:id="@+id/rl_my_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y44">
+
+            <ImageView
+                android:id="@+id/iv_my_exchange"
+                android:layout_width="@dimen/x22"
+                android:layout_height="@dimen/x22"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/vector_ic_my_favorite"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_my_exchange"
+                android:layout_marginLeft="@dimen/x16"
+                android:text="我的兑换"
+                android:textSize="@dimen/text_16"
+                android:textColor="@color/text_black"/>
+
+            <ImageView
+                android:layout_width="@dimen/x10"
+                android:layout_height="@dimen/x17"
+                android:src="@drawable/vector_ic_last_step"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="@color/bg_gray_home"/>
+
+        <!--我的银行卡RL-->
+        <RelativeLayout
+            android:id="@+id/rl_my_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y44">
+
+            <ImageView
+                android:id="@+id/iv_my_bankcard"
+                android:layout_width="@dimen/x22"
+                android:layout_height="@dimen/x22"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@drawable/vector_ic_my_favorite"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_my_bankcard"
+                android:layout_marginLeft="@dimen/x16"
+                android:text="我的银行卡"
                 android:textSize="@dimen/text_16"
                 android:textColor="@color/text_black"/>
 

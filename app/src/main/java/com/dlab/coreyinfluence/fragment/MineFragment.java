@@ -25,8 +25,8 @@ public class MineFragment extends Fragment implements View.OnClickListener{
     private CircleImageView civ_my_head;
     // 昵称、票数、票权
     private TextView tv_my_nickname, tv_my_vote_count, tv_my_vote_weight;
-    // 资产管理、我的关注、设置的RL，做点击
-    private RelativeLayout rl_my_property, rl_my_favorite, rl_my_setting;
+    // 资产管理、我的交易、我的关注、我的兑换、我的银行卡、设置的RL，做点击
+    private RelativeLayout rl_my_property, rl_my_deal, rl_my_exchange, rl_my_bankcard, rl_my_favorite, rl_my_setting;
 
     @Nullable
     @Override
@@ -58,7 +58,10 @@ public class MineFragment extends Fragment implements View.OnClickListener{
 
     private void setOnClickListener() {
         rl_my_property.setOnClickListener(this);
+        rl_my_deal.setOnClickListener(this);
         rl_my_favorite.setOnClickListener(this);
+        rl_my_exchange.setOnClickListener(this);
+        rl_my_bankcard.setOnClickListener(this);
         rl_my_setting.setOnClickListener(this);
     }
 
@@ -74,7 +77,10 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         tv_my_vote_weight = (TextView) view.findViewById(R.id.tv_my_vote_weight);
 
         rl_my_property = (RelativeLayout) view.findViewById(R.id.rl_my_property);
+        rl_my_deal = (RelativeLayout) view.findViewById(R.id.rl_my_deal);
         rl_my_favorite = (RelativeLayout) view.findViewById(R.id.rl_my_favorite);
+        rl_my_exchange = (RelativeLayout) view.findViewById(R.id.rl_my_exchange);
+        rl_my_bankcard = (RelativeLayout) view.findViewById(R.id.rl_my_bankcard);
         rl_my_setting = (RelativeLayout) view.findViewById(R.id.rl_my_setting);
 
     }
@@ -83,8 +89,20 @@ public class MineFragment extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.rl_my_property:
-                // 资产管理
+                // TODO: 2017/6/21 资产管理 
                 Toast.makeText(getContext(), "资产管理", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rl_my_deal:
+                // TODO: 2017/6/21 我的交易 
+                Toast.makeText(getContext(), "我的交易", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rl_my_exchange:
+                // TODO: 2017/6/21 我的兑换 
+                Toast.makeText(getContext(), "我的兑换", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.rl_my_bankcard:
+                // TODO: 2017/6/21 我的银行卡 
+                Toast.makeText(getContext(), "我的银行卡", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.rl_my_favorite:
                 // 我的关注
@@ -92,7 +110,7 @@ public class MineFragment extends Fragment implements View.OnClickListener{
                 startActivity(intent_to_favorite);
                 break;
             case R.id.rl_my_setting:
-                // 设置
+                // TODO: 2017/6/21 设置 
                 Toast.makeText(getContext(), "设置", Toast.LENGTH_SHORT).show();
                 break;
         }
