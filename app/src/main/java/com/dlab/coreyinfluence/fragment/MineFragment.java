@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.dlab.coreyinfluence.activity.MyFavoriteA;
 import com.dlab.coreyinfluence.R;
+import com.dlab.coreyinfluence.activity.PropertyManageA;
 import com.dlab.coreyinfluence.utils.CircleImageView;
 
 
@@ -90,7 +91,8 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.rl_my_property:
                 // TODO: 2017/6/21 资产管理 
-                Toast.makeText(getContext(), "资产管理", Toast.LENGTH_SHORT).show();
+                Intent intent_to_property_manager = new Intent(getActivity(), PropertyManageA.class);
+                startActivity(intent_to_property_manager);
                 break;
             case R.id.rl_my_deal:
                 // TODO: 2017/6/21 我的交易 

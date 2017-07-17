@@ -31,7 +31,9 @@
         <activity
             android:name=".activity.ChooseFavoriteA"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.MySettingA"></activity>
+        <activity android:name=".activity.MySettingA" />
+        <activity android:name=".activity.PropertyManageA" />
+        <activity android:name=".activity.RechargeA"></activity>
     </application>
 
 </manifest>

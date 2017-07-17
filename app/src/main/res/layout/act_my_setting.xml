@@ -51,7 +51,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/x20"
-            android:src="@drawable/vector_ic_my_favorite"/>
+            android:src="@drawable/vector_ic_nickname"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/x20"
-            android:src="@drawable/vector_ic_my_favorite"/>
+            android:src="@drawable/vector_ic_bind_phone"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,7 +148,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/x20"
-            android:src="@drawable/vector_ic_my_favorite"/>
+            android:src="@drawable/vector_ic_bind_wechat"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="@dimen/x20"
-            android:src="@drawable/vector_ic_my_favorite"/>
+            android:src="@drawable/vector_ic_bind_weibo"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -219,6 +219,153 @@
 
         <ImageView
             android:id="@+id/iv_setting_bind_weibo"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="@color/bg_gray_home"/>
+
+    <!--收件人RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_recipient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_recipient"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_recipient"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_recipient"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="收件人"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_recipient"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未填写"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_recipient"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/bg_gray_home"/>
+
+    <!--收件电话RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_recipient_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_recipient_phone"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_recipient_phone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_recipient_phone"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="收件电话"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_recipient_phone"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未填写"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_recipient_phone"
+            android:layout_width="@dimen/x10"
+            android:layout_height="@dimen/x17"
+            android:src="@drawable/vector_ic_last_step"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="@color/bg_gray_home"/>
+
+    <!--收件地址RL-->
+    <RelativeLayout
+        android:id="@+id/rl_my_recipient_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y44"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_my_recipient_address"
+            android:layout_width="@dimen/x22"
+            android:layout_height="@dimen/x22"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/vector_ic_recipient_address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_my_recipient_address"
+            android:layout_marginLeft="@dimen/x16"
+            android:text="收件地址"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_setting_recipient_address"
+            android:layout_marginRight="@dimen/x8"
+            android:gravity="center"
+            android:text="未填写"/>
+
+        <ImageView
+            android:id="@+id/iv_setting_recipient_address"
             android:layout_width="@dimen/x10"
             android:layout_height="@dimen/x17"
             android:src="@drawable/vector_ic_last_step"

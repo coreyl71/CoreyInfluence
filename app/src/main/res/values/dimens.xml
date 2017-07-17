@@ -9,6 +9,7 @@
     <dimen name="text_16">16sp</dimen>
     <dimen name="text_18">18sp</dimen>
     <dimen name="text_20">20sp</dimen>
+    <dimen name="text_50">50sp</dimen>
 
     <string name="stagPosition">position</string>
 </resources>
